@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Advancly</name>
+    </assembly>
+    <members>
+        <member name="T:Advancly.Controllers.AccountController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Advancly.Controllers.AccountController.#ctor(Advancly.Core.Interface.IAccountService)">
+            <summary>
+            
+            </summary>
+            <param name="accountService"></param>
+        </member>
+        <member name="M:Advancly.Controllers.AccountController.GetAccountByUserIdandBVN(System.String,System.String)">
+            <summary>
+            Get Account Details
+            </summary>
+            <param name="userId"></param>
+            <param name="BVN"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Advancly.Controllers.AccountController.Transfer(Advancly.Domain.Entitities.Transaction)">
+            <summary>
+            Send funds to another account
+            </summary>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Advancly.Controllers.AccountController.DepositAccount(Advancly.Core.DTOs.CreditRequest)">
+            <summary>
+            Deposit funds
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Advancly.Controllers.AuthController">
+            <summary>
+            Accounts controller.
+            </summary>
+        </member>
+        <member name="M:Advancly.Controllers.AuthController.#ctor(Microsoft.AspNetCore.Identity.UserManager{Microsoft.AspNetCore.Identity.IdentityUser},Microsoft.AspNetCore.Identity.SignInManager{Microsoft.AspNetCore.Identity.IdentityUser},System.IServiceProvider,AutoMapper.IMapper,Advancly.Infrastructure.AdvanclyDbContext)">
+            <summary>
+            Accounts constructor.
+            </summary>
+            <param name="userManager"></param>
+            <param name="signInManager"></param>
+            <param name="provider"></param>
+            <param name="mapper"></param>
+            <param name="context"></param>
+        </member>
+        <member name="M:Advancly.Controllers.AuthController.CreateUserAsync(Advancly.Core.DTOs.UserCredentials)">
+            <summary>
+            User Registration
+            </summary>
+            <param name="creds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Advancly.Controllers.AuthController.Login(Advancly.Core.DTOs.LoginCredentials)">
+            <summary>
+            Login
+            </summary>
+            <param name="creds"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
